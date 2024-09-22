@@ -1,6 +1,6 @@
-﻿using Tyuiu.SosninFM.Sprint1.Task1.V7.Lib;
+﻿using Tyuiu.SosninFM.Sprint1.Task2.V13.Lib;
 
-namespace Tyuiu.SosninFM.Sprint1.Task1.V7
+namespace Tyuiu.SosninFM.Sprint1.Task2.V13
 {
     internal class Program
     {
@@ -11,36 +11,34 @@ namespace Tyuiu.SosninFM.Sprint1.Task1.V7
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работы в С#                                        *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #13                                                             *");
             Console.WriteLine("* Выполнил: Соснин Фёдор Михайлович | АСОиУб-24-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* вычисляет результат по формуле (5*x)/(y+x) и печатает его на экране     *");
+            Console.WriteLine("* Известно расстояние в милях. Вычислить расстояние в километрах.         *");
+            Console.WriteLine("* Ответ округлите до 3 знаков после запятой.                              *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
+            int x;
 
-            Console.WriteLine("Введите значение Х:");
-            x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Введите значение Y:");
-            y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите расстояние в милях:");
+            x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
+            Console.WriteLine("Расстояние в километрах = " + ds.ConvertMilesToKm(x));
 
-            Console.WriteLine(ds.Calculate(x, y));
             Console.ReadLine();
+
+            
 
 
         }
     }
-
 }
