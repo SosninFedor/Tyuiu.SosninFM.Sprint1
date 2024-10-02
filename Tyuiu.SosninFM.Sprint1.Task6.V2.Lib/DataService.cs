@@ -7,7 +7,9 @@ namespace Tyuiu.SosninFM.Sprint1.Task6.V2.Lib
     {
         public bool CheckHello(string value)
         {
+            
             value.Contains("Hello");
+            
             return value.Contains("Hello");
 
         }
