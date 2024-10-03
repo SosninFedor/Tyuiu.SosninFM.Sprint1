@@ -15,9 +15,6 @@ namespace Tyuiu.SosninFM.Sprint1.Task7.V14.Test
             double wait = -0.889;  
             var res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
-
-
-
         }
     }
 }

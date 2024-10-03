@@ -36,9 +36,6 @@ namespace Tyuiu.SosninFM.Sprint1.Task7.V14
 
             Console.WriteLine(ds.Calculate(x,y));
             Console.ReadKey();
-
-
-
         }
     }
 }
